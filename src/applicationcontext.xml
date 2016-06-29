@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="address" class="Address">
+		<property name="addressLine" value="910 N charles "></property>
+		<property name="city" value="Macomb"></property>
+		<property name="state" value="Illinois"></property>
+		<property name="country" value="U.S.A"></property>
+		
+	</bean>
+	<bean id="emp" class="Employee" autowire="byName">
+		<property name="id" value="123"></property>
+		<property name="name" value="abhishek"></property>
+	</bean>
+</beans>
